@@ -4,7 +4,7 @@
 # > denotes the name of the map that holds the textfile
 ####################################
 #Number of Maps
-14
+24
 ####################################
 #Maps themselves
 1 >map2.txt
@@ -49,3 +49,33 @@
 14 >map1.txt
 >background2.png
 >music2.midi
+15 >mapWater.txt
+>backgroundWater.png
+>music.mid
+16 >mapWater.txt
+>backgroundWater2.png
+>music2.midi
+17 >mapConcrete.txt
+>backgroundConcrete.png
+>music.mid
+18 >mapConcrete.txt
+>backgroundConcrete2.png
+>music2.midi
+19 >mapJungle.txt
+>backgroundJungle.png
+>music.mid
+20 >mapJungle.txt
+>backgroundJungle2.png
+>music2.midi
+21 >mapSnow.txt
+>backgroundSnow.png
+>music.mid
+22 >mapPlains.txt
+>backgroundPlains.png
+>music.mid
+23 >mapPlains.txt
+>backgroundPlains2.png
+>music2.midi
+24 >mapFire.txt
+>backgroundFire.png
+>music.mid
