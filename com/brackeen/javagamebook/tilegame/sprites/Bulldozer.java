@@ -32,6 +32,7 @@ public class Bulldozer extends HomingFly{
 	 public void collideHorizontal() {	
 	    	super.collideVertical();
 	    	setVelocityX(0);
+	    	setState(STATE_DEAD);
 	    }
 		
 	
