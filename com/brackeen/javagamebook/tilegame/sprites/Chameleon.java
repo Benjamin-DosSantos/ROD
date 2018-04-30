@@ -3,10 +3,10 @@ package com.brackeen.javagamebook.tilegame.sprites;
 import com.brackeen.javagamebook.codereflection.CodeReflection;
 import com.brackeen.javagamebook.graphics.Animation;
 
-public class Snowman
-  extends Grub
-{
-  public Snowman(Animation left, Animation right, Animation deadLeft, Animation deadRight)
+
+public class Chameleon extends Creature {
+
+  public Chameleon(Animation left, Animation right, Animation deadLeft, Animation deadRight)
   {
     super(left, right, deadLeft, deadRight);
     if ((CodeReflection.isTracing()) && (SpritesPackageTracingEnabled.getSpritesPackageTracingEnabledInstance().isEnabled()) && 
@@ -17,26 +17,17 @@ public class Snowman
         e.getStackTrace()[0].getMethodName());
     }
     
-
-    trackPlayer = true;
-    health = 2;
+    trackPlayer = false;
+    
+    if (getState() == 0) {
+      setVelocityX(0.0F);
+    } else {
+      trackPlayer = true;
+    }
   }
   
-
-  public void decrementHealth()
-	{
-		if(CodeReflection.isTracing() && SpritesPackageTracingEnabled.getSpritesPackageTracingEnabledInstance().isEnabled()) {
-			if(CodeReflection.getAbstactionLevel()>=3)
-			{//check to make sure it's this level of abstraction
-				e.fillInStackTrace();		
-				CodeReflection.registerMethod(e.getStackTrace()[0].getClassName(),
-						e.getStackTrace()[0].getMethodName());
-			}
-		}
-		health--;
-	}
-  
-  public float getMaxSpeed() {
+  public float getMaxSpeed()
+  {
     if ((CodeReflection.isTracing()) && (SpritesPackageTracingEnabled.getSpritesPackageTracingEnabledInstance().isEnabled()) && 
       (CodeReflection.getAbstactionLevel() >= 2))
     {

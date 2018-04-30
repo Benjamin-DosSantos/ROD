@@ -5,34 +5,35 @@ import com.brackeen.javagamebook.graphics.Animation;
 
 
 public class BetterMonkey
-  extends Monkey
+extends Monkey
 {
-  public BetterMonkey(Animation left, Animation right, Animation deadLeft, Animation deadRight)
-  {
-    super(left, right, deadLeft, deadRight);
-    if ((CodeReflection.isTracing()) && (SpritesPackageTracingEnabled.getSpritesPackageTracingEnabledInstance().isEnabled()) && 
-      (CodeReflection.getAbstactionLevel() >= 1))
-    {
-      e.fillInStackTrace();
-      CodeReflection.registerMethod(e.getStackTrace()[0].getClassName(), 
-        e.getStackTrace()[0].getMethodName());
-    }
-    
-    trackPlayer = true;
-    intelligent = true;
-  }
-  
-  public void setHealth(int x)
-  {
-    x = 2;
-    if ((CodeReflection.isTracing()) && (SpritesPackageTracingEnabled.getSpritesPackageTracingEnabledInstance().isEnabled()) && 
-      (CodeReflection.getAbstactionLevel() >= 3))
-    {
-      e.fillInStackTrace();
-      CodeReflection.registerMethod(e.getStackTrace()[0].getClassName(), 
-        e.getStackTrace()[0].getMethodName());
-    }
-    
-    health = x;
-  }
+	public BetterMonkey(Animation left, Animation right, Animation deadLeft, Animation deadRight)
+	{
+		super(left, right, deadLeft, deadRight);
+		if ((CodeReflection.isTracing()) && (SpritesPackageTracingEnabled.getSpritesPackageTracingEnabledInstance().isEnabled()) && 
+				(CodeReflection.getAbstactionLevel() >= 1))
+		{
+			e.fillInStackTrace();
+			CodeReflection.registerMethod(e.getStackTrace()[0].getClassName(), 
+					e.getStackTrace()[0].getMethodName());
+		}
+
+		trackPlayer = true;
+		intelligent = true;
+
+		health = 2;
+	}
+
+	public void decrementHealth()
+	{
+		if(CodeReflection.isTracing() && SpritesPackageTracingEnabled.getSpritesPackageTracingEnabledInstance().isEnabled()) {
+			if(CodeReflection.getAbstactionLevel()>=3)
+			{//check to make sure it's this level of abstraction
+				e.fillInStackTrace();		
+				CodeReflection.registerMethod(e.getStackTrace()[0].getClassName(),
+						e.getStackTrace()[0].getMethodName());
+			}
+		}
+		health--;
+	}
 }

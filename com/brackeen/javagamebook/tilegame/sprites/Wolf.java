@@ -22,7 +22,7 @@ public class Wolf
     trackPlayer = true;
     
 
-    setVelocityX(getVelocityX() * 2.0F);
+    setVelocityX(getVelocityX() * 2f);
   }
   
   public float getMaxSpeed() {
@@ -34,6 +34,6 @@ public class Wolf
         e.getStackTrace()[0].getMethodName());
     }
     
-    return 0.01F * enemySpeedMultiplier;
+    return 0.11f * enemySpeedMultiplier;
   }
 }

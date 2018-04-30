@@ -4,8 +4,7 @@ import com.brackeen.javagamebook.codereflection.CodeReflection;
 import com.brackeen.javagamebook.graphics.Animation;
 
 
-public class PolarBear
-  extends Wolf
+public class PolarBear extends Creature
 {
   public PolarBear(Animation left, Animation right, Animation deadLeft, Animation deadRight)
   {
@@ -20,21 +19,21 @@ public class PolarBear
     
 
     trackPlayer = true;
+    health = 3;
   }
   
-  public void setHealth(int x)
-  {
-    x = 3;
-    if ((CodeReflection.isTracing()) && (SpritesPackageTracingEnabled.getSpritesPackageTracingEnabledInstance().isEnabled()) && 
-      (CodeReflection.getAbstactionLevel() >= 3))
-    {
-      e.fillInStackTrace();
-      CodeReflection.registerMethod(e.getStackTrace()[0].getClassName(), 
-        e.getStackTrace()[0].getMethodName());
-    }
-    
-    health = x;
-  }
+  public void decrementHealth()
+	{
+		if(CodeReflection.isTracing() && SpritesPackageTracingEnabled.getSpritesPackageTracingEnabledInstance().isEnabled()) {
+			if(CodeReflection.getAbstactionLevel()>=3)
+			{//check to make sure it's this level of abstraction
+				e.fillInStackTrace();		
+				CodeReflection.registerMethod(e.getStackTrace()[0].getClassName(),
+						e.getStackTrace()[0].getMethodName());
+			}
+		}
+		health--;
+	}
   
   public float getMaxSpeed() {
     if ((CodeReflection.isTracing()) && (SpritesPackageTracingEnabled.getSpritesPackageTracingEnabledInstance().isEnabled()) && 
@@ -45,6 +44,6 @@ public class PolarBear
         e.getStackTrace()[0].getMethodName());
     }
     
-    return 0.01F * enemySpeedMultiplier;
+    return 0.15f * enemySpeedMultiplier;
   }
 }
