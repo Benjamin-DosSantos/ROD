@@ -357,6 +357,73 @@ public class ResourceManager {
             tiles.add(loadImage(name));
             ch++;
         }
+        
+        char con = 'A';
+        while (true) {
+            String name = "tile_Concrete" + con + ".png";
+            File file = new File("images/" + name);
+            if (!file.exists()) {
+                break;
+            }
+            tiles.add(loadImage(name));
+            con++;
+        }
+        
+        char fir = 'A';
+        while (true) {
+            String name = "tile_Fire" + con + ".png";
+            File file = new File("images/" + name);
+            if (!file.exists()) {
+                break;
+            }
+            tiles.add(loadImage(name));
+            con++;
+        }
+        
+        char jun = 'A';
+        while (true) {
+            String name = "tile_Jungle" + jun + ".png";
+            File file = new File("images/" + name);
+            if (!file.exists()) {
+                break;
+            }
+            tiles.add(loadImage(name));
+            jun++;
+        }
+        
+        char pla = 'A';
+        while (true) {
+            String name = "tile_Plains" + pla + ".png";
+            File file = new File("images/" + name);
+            if (!file.exists()) {
+                break;
+            }
+            tiles.add(loadImage(name));
+            pla++;
+        }
+        
+        char sno = 'A';
+        while (true) {
+            String name = "tile_Snow" + sno + ".png";
+            File file = new File("images/" + name);
+            if (!file.exists()) {
+                break;
+            }
+            tiles.add(loadImage(name));
+            sno++;
+        }
+        
+        char wat = 'A';
+        while (true) {
+            String name = "tile_Water" + wat + ".png";
+            File file = new File("images/" + name);
+            if (!file.exists()) {
+                break;
+            }
+            tiles.add(loadImage(name));
+            wat++;
+        }
+        
     }
 
     public void loadCreatureSprites() {
