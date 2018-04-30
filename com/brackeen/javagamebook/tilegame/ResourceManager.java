@@ -253,12 +253,48 @@ public class ResourceManager {
 
                 // check if the char represents tile A, B, C etc.
                 int tile = ch - 'A';
-                if (tile >= 0 && tile < tiles.size()) {
+                if (!filename.equals("ConcreteMap.txt") || !filename.equals("FireMap.txt") || !filename.equals("JungleMap.txt") ||!filename.equals("PlainsMap.txt") ||!filename.equals("SnowMap.txt") ||!filename.equals("WaterMap.txt")) {
                     newMap.setTile(x, y, (Image)tiles.get(tile));
+                }
+                if(filename.equals("ConcreteMap.txt")) {
+                	while(tile >=3 && tile < 11) {
+                		newMap.setTile(x, y, (Image)tiles.get(tile));
+                		tile++;
+                	}
+                }
+                if(filename.equals("FireMap.txt")) {
+                	while(tile >=15 && tile < 23) {
+                		newMap.setTile(x, y, (Image)tiles.get(tile));
+                		tile++;
+                	}
+                }
+                if(filename.equals("JungleMap.txt")) {
+                	while(tile >=29 && tile < 37) {
+                		newMap.setTile(x, y, (Image)tiles.get(tile));
+                		tile++;
+                	}
+                }
+                if(filename.equals("PlainsMap.txt")) {
+                	while(tile >=38 && tile < 46) {
+                		newMap.setTile(x, y, (Image)tiles.get(tile));
+                		tile++;
+                	}
+                }
+                if(filename.equals("SnowMap.txt")) {
+                	while(tile >=47 && tile < 55) {
+                		newMap.setTile(x, y, (Image)tiles.get(tile));
+                		tile++;
+                	}
+                }
+                if(filename.equals("WaterMap.txt")) {
+                	while(tile >=56 && tile < 64) {
+                		newMap.setTile(x, y, (Image)tiles.get(tile));
+                		tile++;
+                	}
                 }
 
                 // check if the char represents a sprite
-                else if (ch == 'o') {
+                else if (ch == '.') {
                     addSprite(newMap, coinSprite, x, y);
                 }
                 else if (ch == '!') {
@@ -371,13 +407,13 @@ public class ResourceManager {
         
         char fir = 'A';
         while (true) {
-            String name = "tile_Fire" + con + ".png";
+            String name = "tile_Fire" + fir + ".png";
             File file = new File("images/" + name);
             if (!file.exists()) {
                 break;
             }
             tiles.add(loadImage(name));
-            con++;
+            fir++;
         }
         
         char jun = 'A';
