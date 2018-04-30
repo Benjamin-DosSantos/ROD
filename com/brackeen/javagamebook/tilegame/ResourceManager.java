@@ -253,7 +253,7 @@ public class ResourceManager {
 
                 // check if the char represents tile A, B, C etc.
                 int tile = ch - 'A';
-                if (!filename.equals("ConcreteMap.txt") || !filename.equals("FireMap.txt") || !filename.equals("JungleMap.txt") ||!filename.equals("PlainsMap.txt") ||!filename.equals("SnowMap.txt") ||!filename.equals("WaterMap.txt")) {
+                if (!filename.equals("ConcreteMap.txt") && !filename.equals("FireMap.txt") && !filename.equals("JungleMap.txt") && !filename.equals("PlainsMap.txt") && !filename.equals("SnowMap.txt") && !filename.equals("WaterMap.txt")) {
                     newMap.setTile(x, y, (Image)tiles.get(tile));
                 }
                 if(filename.equals("ConcreteMap.txt")) {
