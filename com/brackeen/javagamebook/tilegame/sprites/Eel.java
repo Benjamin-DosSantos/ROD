@@ -19,17 +19,39 @@ public class Eel extends Creature{
         	}
     	}
         
+        health = 2;
+        
+        setVelocityX(0.25f);
+        setVelocityY(0.25f);
+        
         //The eel only attacks the player if provoked 
         if(getState()==STATE_HURT) {
         	trackPlayer=true;
         	setVelocityX(getVelocityX()*2);
         	setVelocityY(getVelocityY()*2);
+        }else {
+        	setVelocityX(getVelocityX());
+        	setVelocityY(getVelocityY());
         }
         
 	}
 	
+	public void decrementHealth()
+	{
+    	if(CodeReflection.isTracing() && SpritesPackageTracingEnabled.getSpritesPackageTracingEnabledInstance().isEnabled()) {
+        	if(CodeReflection.getAbstactionLevel()>=3)
+        	{//check to make sure it's this level of abstraction
+        		e.fillInStackTrace();		
+        		CodeReflection.registerMethod(e.getStackTrace()[0].getClassName(),
+        								e.getStackTrace()[0].getMethodName());
+        	}
+    	}
+		health--;
+	}
+
+	
 	//Health is set to 2
-    public void setHealth(int x){
+  /*  public void setHealth(int x){
 
 		x=2;
 
@@ -44,5 +66,5 @@ public class Eel extends Creature{
 
 		health=x;
 	}
-
+ */
 }

@@ -31,7 +31,7 @@ public class Bulldozer extends HomingFly{
 	//If the bulldozer crashes into something it breaks down 
 	 public void collideHorizontal() {	
 	    	super.collideVertical();
-	    	setVelocityY(0);
+	    	setVelocityX(0);
 	    }
 		
 	
