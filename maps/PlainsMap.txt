@@ -1,17 +1,17 @@
 #This Map was generated using Map Creator v1.1
-I = invis blocks, left wall
-I in pyramid = sand blocks
-B = ground
-c = cactus
-s = sand snake
+#I = invis blocks, left wall
+#I in pyramid = sand blocks
+#B = ground
+#c = cactus
+#s = sand snake
 
 
 I                                                                                                   
 I                                                                                                   
 I                                                                                                   
-I               o                                                                                   
+I               .                                                                                   
 I           I   I                                                                                   
 I          I     I                                                                                  
 I         I       I                                                                                 
-I        I cccccc  I    c   c    oo       s      *                                                  
+I        I tttttt  I    t   t    ..       u      *                                                  
 BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB                                                  

@@ -1,16 +1,16 @@
 #This Map was generated using Map Creator v1.1
-D,B, AND I WILL BECOME CONCRETE BLOCKS
-BOTTOM Z  = CONES
-TOP Z = HELICOPPER
-MIDDLE Z = BULLDOZER
+#D,B, AND I WILL BECOME CONCRETE BLOCKS
+#BOTTOM Z  = CONES
+#TOP Z = HELICOPPER
+#MIDDLE Z = BULLDOZER
 
 
 D   I                           I                                                                   
-D   I                         z I                                                                   
+D   I                         n I                                                                   
 D   I     I                                   I  *                                                  
 D   II   IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII                                                  
-D   III       z                                                                                      
+D   III       m                                                                                      
 D   IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII   II                                                  
 D    II  IIIIIIIIIIII  IIIII        IIII       I I                                                  
 D                                             I  I                                                  
-HBBBBBBBBBBBBBBBBBBBBBBBBBBBBzzzBBBBBBBBBBBBBBBBBB                                                  
+HBBBBBBBBBBBBBBBBBBBBBBBBBBBBlllBBBBBBBBBBBBBBBBBB                                                  

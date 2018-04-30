@@ -1,18 +1,18 @@
 #This Map was generated using Map Creator v1.1
-D, H, B = respective snow areas
-I = snow blocks
-o = stars
-n = snowman
-w = wolf
-t = turtle mini boss
+#D, H, B = respective snow areas
+#I = snow blocks
+#o = stars
+#n = snowman
+#w = wolf
+#t = turtle mini boss
 
 
 D                             D                                                                     
 D                             D                                                                     
-D             o               D                                                                     
+D             .               D                                                                     
 D                             D                                                                     
-D         III   III     o     D*    t                                                               
+D         III   III     .     D*    y                                                               
 D        I         I          HBBBBBBBBBBBBBBBBB                                                    
 D       I              III                       I                                                  
-D      I         nn   I   I                  w  oI                                                  
+D      I         rr   I   I                  s  .I                                                  
 HBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB                                                  
