@@ -1,0 +1,18 @@
+#This Map was generated using Map Creator v1.1
+o = star
+I = top water level, whatever block type it is supposed to be
+C = seaweed? or something similar
+top * = warp to a different level
+bottom * = next level
+first 2 z's are fish, middle is eel, last is shark
+
+
+D   IIIIIIIIIIII    IIIIII    IIIIIIIIIIIIIIIIIIII                                                  
+D                                               C                                                   
+D          z                                    C                                                   
+D                                        z      C                                                   
+D       C  z                                                                                        
+D       C           C   z C     C            C                                                      
+D       C           C  C  C     C            C                                                      
+D       C           C oC oC     C            C   *                                                  
+HBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB                                                  
