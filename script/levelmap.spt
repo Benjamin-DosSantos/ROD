@@ -49,33 +49,33 @@
 14 >map1.txt
 >background2.png
 >music2.midi
-15 >mapWater.txt
->backgroundWater.png
+15 >WaterMap.txt
+>WaterMapBackground.png
 >music.mid
-16 >mapWater.txt
->backgroundWater2.png
+16 >WaterMap.txt
+>WaterMapBackground.png
 >music2.midi
-17 >mapConcrete.txt
->backgroundConcrete.png
+17 >ConcreteMap.txt
+>ConcreteMapBackground.png
 >music.mid
-18 >mapConcrete.txt
->backgroundConcrete2.png
+18 >ConcreteMap.txt
+>ConcreteMapBackground.png
 >music2.midi
-19 >mapJungle.txt
->backgroundJungle.png
+19 >JungleMap.txt
+>JungleMapBackground.png
 >music.mid
-20 >mapJungle.txt
->backgroundJungle2.png
+20 >JungleMap.txt
+>JungleMapBackground.png
 >music2.midi
-21 >mapSnow.txt
->backgroundSnow.png
+21 >SnowMap.txt
+>SnowMapBackground.png
 >music.mid
-22 >mapPlains.txt
->backgroundPlains.png
+22 >PlainsMap.txt
+>DesertMapBackground.png
 >music.mid
-23 >mapPlains.txt
->backgroundPlains2.png
+23 >PlainsMap.txt
+>DesertMapBackground.png
 >music2.midi
-24 >mapFire.txt
->backgroundFire.png
+24 >FireMap.txt
+>FireMapBackground.png
 >music.mid
