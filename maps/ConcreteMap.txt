@@ -1,16 +1,21 @@
-#This Map was generated using Map Creator v1.1
-#D,B, AND I WILL BECOME CONCRETE BLOCKS
-#BOTTOM Z  = CONES
-#TOP Z = HELICOPPER
-#MIDDLE Z = BULLDOZER
+# Map file for tile-based game
+# (Lines that start with '#' are comments)
+# The tiles are:
+#   (Space) Empty tile
+#   A..Z    Tiles A through Z
+#   *       Goal
+#   t       Bad Guy t (hazardcone)
+#   k       Bad Guy k (bulldozer)
+#   u       Bad Guy u (helicopter)
 
 
-D   I                           I                                                                   
-D   I                         n I                                                                   
-D   I     I                                   I  *                                                  
-D   II   IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII                                                  
-D   III       m                                                                                      
-D   IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII   II                                                  
-D    II  IIIIIIIIIIII  IIIII        IIII       I I                                                  
-D                                             I  I                                                  
-HBBBBBBBBBBBBBBBBBBBBBBBBBBBBlllBBBBBBBBBBBBBBBBBB                                                  
+D    I     I         
+D    I                                 u       I  *
+D    II   IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII
+D    II
+D    III                            k              
+D    IIIIII          IIII   IIIIIIIIII  IIIIII   II
+D     II   IIIIIIIIII    III          II        I I
+D                                             I  I 
+D
+HBBBBBBBBBBBBBBBBBBBBBBBBBBBBBtBBBBBBBBBBBBBBBBBBBB                                               

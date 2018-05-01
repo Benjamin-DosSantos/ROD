@@ -1,18 +1,21 @@
-#This Map was generated using Map Creator v1.1
-#o = star
-#I = top water level, whatever block type it is supposed to be
-#C = seaweed? or something similar
-#top * = warp to a different level
-#bottom * = next level
-#first 2 z's are fish, middle is eel, last is shark
+# Map file for tile-based game
+# The tiles are:
+#   (Space) Empty tile
+#   A..Z    Tiles A through Z
+#   +       Star
+#   *       Goal
+#   n       Bad Guy n (eel)
+#   p       Bad Guy p (fish)
+#   w       Bad Guy w (shark)
 
 
-D   IIIIIIIIIIII    IIIIII    IIIIIIIIIIIIIIIIIIII                                                  
-D                                               C                                                   
-D          i                                    C                                                   
-D                                        j      C                                                   
-D       C  i                                                                                        
-D       C           C   k C     C            C                                                      
-D       C           C  C  C     C            C                                                      
-D       C           C .C .C     C            C   *                                                  
-HBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB                                                  
+F       JJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJE
+D                                                 C
+D                p                                C
+D                          p                      C
+D                                     III         C
+D                I  EF                 p   II EF   
+D                   CD   n       EF I         CD   
+D       EF   I      CD           CD   wIII  I CD   
+D       CD  n   n   CD      n    CD      w    CD  *
+HBBBBBBBGHBBBBBBBBBBGHBBBBBBBBBBBGHBBBBBBBBBBBGHBBB

@@ -14,9 +14,9 @@
 #   0       Warp
                            II
                            II
-                       cba  !                                                 o     o     
-                     IIIIIIIIIII^                a                                o           o
-         bb               o   aac   o o                        a                     o
-         EBBF           IIIIIIIII        o   o        o          b  b               bbbbbb             o
-     a   CAAD cccc       o    o         0    b  ^^   o   o    c c  a  c cc     cccc aa     aa o^       *
+                       cba  !                                                 +     +     
+                     IIIIIIIIIII^                a                                +           +
+         bb               +   aac   + +                        a                     +
+         EBBF           IIIIIIIII        +   +        +          b  b               bbbbbb             +
+     a   CAAD cccc       +    +         0    b  ^^   +   +    c c  a  c cc     cccc aa     aa +^       *
 EBBBBBBBBGAAHBBBBBBBBBBBBBBBBBBBBBBBBAAABBBBAABBBBBBBBBBBBB  IIII  IIII  EBBBBBBBBBBBBBBBBBBBBBBBBBBBBBF

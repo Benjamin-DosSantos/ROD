@@ -1,4 +1,5 @@
 #This Map was generated using Map Creator v1.1
+
 #I = invis blocks, left wall
 #I in pyramid = sand blocks
 #B = ground
@@ -6,12 +7,12 @@
 #s = sand snake
 
 
-I                                                                                                   
-I                                                                                                   
-I                                                                                                   
-I               .                                                                                   
-I           I   I                                                                                   
-I          I     I                                                                                  
-I         I       I                                                                                 
-I        I tttttt  I    t   t    ..       u      *                                                  
-BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB                                                  
+I                                 *               CAA
+I                               IIIII     r       CAA
+I                ^                      IIII      CAA
+I               III                          I    CAA
+I              I   I                             ^CAA
+I       ^+ +           r                          CAA
+I       I + I         EF                         EGAA
+Il     I lll Il   r  EGHF    ++   r   r    ll   EGAAA
+BBBBBBBBBBBBBBBBBBBBBGAAHBBBBBBBBBBBBBBBBBBBBBBBGAAAA

@@ -18,9 +18,9 @@
                            II
                            II
                            II
-                       cba                   c                                 o     o     
-                c    IIIIIIIIIII                 a        c                        o           o            b
-b         bb               o   aac   o o                        a                     o               c              b      
-         EBBF  c        IIIIIIIII        o   o        o          b  b                                        bb      c EF    aao
-        aCAAD cc       o    o              b       co   o     c  a     c     cccc aa     aa o        b                 CD     b *
+                       cba                   c                                 +     +     
+                c    IIIIIIIIIII                 a        c                        +           +            b
+b         bb               +   aac   + +                        a                     +               c              b      
+         EBBF  c        IIIIIIIII        +   +        +          b  b                                        bb      c EF    aa+
+        aCAAD cc       +    +              b       c+   +     c  a     c     cccc aa     aa +        b                 CD     b *
 EBBBBBBBBGAAHBBBBBBBBBBBBBBBBBBBBBBBBF    III    III    III    EBBBBBBBBBBBBBBBBF  IIII  IIII  EBBBBBBBBBBBBBBBBBBBBBBBBF   EBBBB

@@ -1,18 +1,18 @@
 #This Map was generated using Map Creator v1.1
 
-#v = volcano
-#l = lighter
-#f = fireball
-#t = turtle boss
+#y = volcano
+#z = lighter
+#o = fireball
+#i = turtle boss
 #all other tiles = fire objects
 
-
-D               I                                      I                            I               
-D               I                                      I                            I               
-D               I                                      I                            I               
-D               I                                      I                I          vI               
-D               I           x                          I               vI          vI               
-D               I        EBBBBBB   BBBB                I                I          vI               
-D       .       I       E              F               I          I     I    I      I               
-D   I   I       ^      E        www     F   ..         ^      xx II        vII  .   ^           z  *
-HBBBBwwwBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
+       
+F                                                                      CD
+D                                                                      CD               
+D                       ++                                             CD               
+D                      IIIII        ^                                 o               
+D                                  III       z            o           o               
+D      ^            y   z    ^  y+          IIII        IIII          oEF             E
+D       +          EBBBBBBFyyyEBBBF                  I          I      CD             C
+D   IyyyI    ^    EGAAAAAAHBBBGAAAHF   ++    z      z II     ^o  II  + CD      i     *C
+HBBBBBBBBBBBBBBBBBGAAAAAAAAAAAAAAAAHBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBGHBBBBBBBBBBBBBG

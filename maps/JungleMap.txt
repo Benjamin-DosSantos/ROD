@@ -1,20 +1,19 @@
 #This Map was generated using Map Creator v1.1
-c = chameleon
-g = gorilla
-s = snake
-A = trunk
-I = treee top
-B = ground
-D = walls
-C = other walls
 
-
-D  D                                             C                                                  
-D  D         . o    IIIIIIIII  .       ..        C                                                  
-D  D     IIIIIIIII    AAAAA D               p    C                                                  
-D  D    E   AAA       AAAAA D  u  IIIIIIIIIIII   C                                                  
-D  DD   C   AAA       AAAAA HBBBBB  AAA          C                                                  
-D  D   EG   AAA       AAAAA         AAA      I                                                      
-D     EG    AAA       AAAAA         AAA     II .                                                    
-D    EG   u        u        u    u         III   *                                                  
-HBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB                                                  
+#m = chameleon
+#q = gorilla
+#s = snake
+#A = trunk
+#I = treee top
+#B = ground
+#D = walls
+#C = other walls
+D   D                  ^  m                       C
+D   D         + m    IIIIIIIII  +       ++        C
+D   D     IIIIIIIII    AAAAA D          q    q    C
+D   D    E   AAA       AAAAA D  s  IIIIIIIIIIII   C
+D   D   ^C   AAA       AAAAA HBBBBB  AAA       ^  C
+D   D   EG   AAA       AAAAA         AAA      E    
+D      EG    AAA       AAAAA         AAA     EG +  
+D   ^ EG   s        s        s    s         EGA   *
+HBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBGAABBBB
