@@ -235,328 +235,407 @@ public class ResourceManager {
 					newMap.setTile(x, y, (Image) tiles.get(tile));*/
 				
 				switch (filename) {
-					case "maps/ConcreteMap.txt":
+					case "maps/ConcreteMap.txt": //loads all of the tiles for the Concrete Map
 						switch (ch){
-						case 'B':
+						
+						case 'A':
 							tile = 0;
 							newMap.setTile(x, y, (Image) tiles.get(tile+1));
+							break;
 							
+						case 'B':
+							tile = 0;
+							newMap.setTile(x, y, (Image) tiles.get(tile+8));
+							break;
+							
+						case 'C':
+							tile = 0;
+							newMap.setTile(x, y, (Image) tiles.get(tile+15));
 							break;
 							
 						case 'D':
 							tile = 0;
 							newMap.setTile(x, y, (Image)tiles.get(tile+22));
+							break;
 							
+						case 'E':
+							tile = 0;
+							newMap.setTile(x, y, (Image) tiles.get(tile+29));
+							break;
+							
+						case 'F':
+							tile = 0;
+							newMap.setTile(x, y, (Image) tiles.get(tile+36));
+							break;
+							
+						case 'G':
+							tile = 0;
+							newMap.setTile(x, y, (Image)tiles.get(tile+43));
+							break;
+							
+						case 'H':
+							tile = 0;
+							newMap.setTile(x, y, (Image)tiles.get(tile+50));
 							break;
 							
 						case 'I':
 							tile = 0;
 							newMap.setTile(x, y, (Image)tiles.get(tile+57));
-		
 							break;
-						case 'H':
-							tile = 0;
-							newMap.setTile(x, y, (Image)tiles.get(tile+43));
-							
-							break;
-							
+			
 						case ' ':
 							tile = 0;
 							break;
-							
+			
 						default:
-							//newMap.setTile(x, y, (Image)tiles.get(tile));
 							break;
 						}
 						break;
-					case "maps/FireMap.txt":
+					case "maps/FireMap.txt": //Loads all of the tiles from the Fire Map
 						switch (ch){
+						
+						case 'A':
+							tile = 0;
+							newMap.setTile(x, y, (Image) tiles.get(tile+2));
+							break;
+							
 						case 'B':
 							tile = 0;
-							newMap.setTile(x, y, (Image)tiles.get(tile+9));
+							newMap.setTile(x, y, (Image) tiles.get(tile+9));
+							break;
 							
+						case 'C':
+							tile = 0;
+							newMap.setTile(x, y, (Image) tiles.get(tile+16));
 							break;
 							
 						case 'D':
 							tile = 0;
 							newMap.setTile(x, y, (Image)tiles.get(tile+23));
+							break;
 							
+						case 'E':
+							tile = 0;
+							newMap.setTile(x, y, (Image) tiles.get(tile+30));
+							break;
+							
+						case 'F':
+							tile = 0;
+							newMap.setTile(x, y, (Image) tiles.get(tile+37));
+							break;
+							
+						case 'G':
+							tile = 0;
+							newMap.setTile(x, y, (Image)tiles.get(tile+44));
+							break;
+							
+						case 'H':
+							tile = 0;
+							newMap.setTile(x, y, (Image)tiles.get(tile+51));
 							break;
 							
 						case 'I':
 							tile = 0;
 							newMap.setTile(x, y, (Image)tiles.get(tile+58));
-		
 							break;
-						case 'H':
-							tile = 0;
-							newMap.setTile(x, y, (Image)tiles.get(tile+51));
-							
-							break;
-							
-						case 'E':
-							tile = 0;
-							newMap.setTile(x, y, (Image)tiles.get(tile+30));
-							
-							break;
-							
-						case 'F':
-							tile = 0;
-							newMap.setTile(x, y, (Image)tiles.get(tile+37));
-							
-							break;
-							
+			
 						case ' ':
-							
+							tile = 0;
 							break;
-							
+			
 						default:
-							//newMap.setTile(x, y, (Image)tiles.get(tile));
 							break;
 						}
 						break;
-					case "maps/JungleMap.txt":
-						
+					case "maps/JungleMap.txt": //Loads all of the tiles from the Jungle Map
 						switch (ch){
+						
+						case 'A':
+							tile = 0;
+							newMap.setTile(x, y, (Image) tiles.get(tile+4));
+							break;
+							
 						case 'B':
 							tile = 0;
-							newMap.setTile(x, y, (Image)tiles.get(tile+11));
+							newMap.setTile(x, y, (Image) tiles.get(tile+11));
+							break;
 							
+						case 'C':
+							tile = 0;
+							newMap.setTile(x, y, (Image) tiles.get(tile+18));
 							break;
 							
 						case 'D':
 							tile = 0;
 							newMap.setTile(x, y, (Image)tiles.get(tile+25));
-							
 							break;
 							
-						case 'I':
+						case 'E':
 							tile = 0;
-							newMap.setTile(x, y, (Image)tiles.get(tile+60));
-		
-							break;
-						case 'H':
-							tile = 0;
-							newMap.setTile(x, y, (Image)tiles.get(tile+53));
-							
+							newMap.setTile(x, y, (Image) tiles.get(tile+32));
 							break;
 							
-						case 'A':
+						case 'F':
 							tile = 0;
-							newMap.setTile(x, y, (Image)tiles.get(tile+4));
-							
-							break;
-							
-						case 'C':
-							tile = 0;
-							newMap.setTile(x, y, (Image)tiles.get(tile+18));
-							
+							newMap.setTile(x, y, (Image) tiles.get(tile+39));
 							break;
 							
 						case 'G':
 							tile = 0;
 							newMap.setTile(x, y, (Image)tiles.get(tile+46));
-							
 							break;
 							
+						case 'H':
+							tile = 0;
+							newMap.setTile(x, y, (Image)tiles.get(tile+53));
+							break;
+							
+						case 'I':
+							tile = 0;
+							newMap.setTile(x, y, (Image)tiles.get(tile+60));
+							break;
+			
 						case ' ':
-							
+							tile = 0;
 							break;
-							
+			
 						default:
-							//newMap.setTile(x, y, (Image)tiles.get(tile));
 							break;
 						}
-						
 						break;
-					case "maps/PlainsMap.txt":
+					case "maps/PlainsMap.txt": //Loads all of the tiles from the Plains Map
 						switch (ch){
+						
+						case 'A':
+							tile = 0;
+							newMap.setTile(x, y, (Image) tiles.get(tile+3));
+							break;
+							
 						case 'B':
 							tile = 0;
-							newMap.setTile(x, y, (Image)tiles.get(tile+10));
+							newMap.setTile(x, y, (Image) tiles.get(tile+10));
+							break;
 							
+						case 'C':
+							tile = 0;
+							newMap.setTile(x, y, (Image) tiles.get(tile+17));
+							break;
+							
+						case 'D':
+							tile = 0;
+							newMap.setTile(x, y, (Image)tiles.get(tile+24));
+							break;
+							
+						case 'E':
+							tile = 0;
+							newMap.setTile(x, y, (Image) tiles.get(tile+31));
+							break;
+							
+						case 'F':
+							tile = 0;
+							newMap.setTile(x, y, (Image) tiles.get(tile+38));
+							break;
+							
+						case 'G':
+							tile = 0;
+							newMap.setTile(x, y, (Image)tiles.get(tile+45));
+							break;
+							
+						case 'H':
+							tile = 0;
+							newMap.setTile(x, y, (Image)tiles.get(tile+52));
 							break;
 							
 						case 'I':
 							tile = 0;
 							newMap.setTile(x, y, (Image)tiles.get(tile+59));
-		
 							break;
+			
 						case ' ':
-							
-							break;	
-							
+							tile = 0;
+							break;
+			
 						default:
-							//newMap.setTile(x, y, (Image)tiles.get(tile));
 							break;
 						}
 						break;
-					case "maps/SnowMap.txt":
+					case "maps/SnowMap.txt": //Loads all of the tiles from the Snow Map
 						switch (ch){
+						
+						case 'A':
+							tile = 0;
+							newMap.setTile(x, y, (Image) tiles.get(tile+5));
+							break;
+							
 						case 'B':
 							tile = 0;
-							newMap.setTile(x, y, (Image)tiles.get(tile+12));
+							newMap.setTile(x, y, (Image) tiles.get(tile+12));
+							break;
 							
+						case 'C':
+							tile = 0;
+							newMap.setTile(x, y, (Image) tiles.get(tile+19));
 							break;
 							
 						case 'D':
 							tile = 0;
 							newMap.setTile(x, y, (Image)tiles.get(tile+26));
+							break;
 							
+						case 'E':
+							tile = 0;
+							newMap.setTile(x, y, (Image) tiles.get(tile+33));
+							break;
+							
+						case 'F':
+							tile = 0;
+							newMap.setTile(x, y, (Image) tiles.get(tile+40));
+							break;
+							
+						case 'G':
+							tile = 0;
+							newMap.setTile(x, y, (Image)tiles.get(tile+47));
+							break;
+							
+						case 'H':
+							tile = 0;
+							newMap.setTile(x, y, (Image)tiles.get(tile+54));
 							break;
 							
 						case 'I':
 							tile = 0;
 							newMap.setTile(x, y, (Image)tiles.get(tile+61));
-		
 							break;
-						case 'H':
-							tile = 0;
-							newMap.setTile(x, y, (Image)tiles.get(tile+54));
-							
-							break;
-							
+			
 						case ' ':
-							
+							tile = 0;
 							break;
-							
+			
 						default:
-							//newMap.setTile(x, y, (Image)tiles.get(tile));
 							break;
 						}
 						break;
-					case "maps/WaterMap.txt":
+					case "maps/WaterMap.txt": //Loads all of the tiles from the Water Map
 						switch (ch){
+						
+						case 'A':
+							tile = 0;
+							newMap.setTile(x, y, (Image) tiles.get(tile+6));
+							break;
+							
 						case 'B':
 							tile = 0;
-							newMap.setTile(x, y, (Image)tiles.get(tile+13));
+							newMap.setTile(x, y, (Image) tiles.get(tile+13));
+							break;
 							
+						case 'C':
+							tile = 0;
+							newMap.setTile(x, y, (Image) tiles.get(tile+20));
 							break;
 							
 						case 'D':
 							tile = 0;
 							newMap.setTile(x, y, (Image)tiles.get(tile+27));
+							break;
 							
+						case 'E':
+							tile = 0;
+							newMap.setTile(x, y, (Image) tiles.get(tile+34));
+							break;
+							
+						case 'F':
+							tile = 0;
+							newMap.setTile(x, y, (Image) tiles.get(tile+41));
+							break;
+							
+						case 'G':
+							tile = 0;
+							newMap.setTile(x, y, (Image)tiles.get(tile+48));
+							break;
+							
+						case 'H':
+							tile = 0;
+							newMap.setTile(x, y, (Image)tiles.get(tile+55));
 							break;
 							
 						case 'I':
 							tile = 0;
 							newMap.setTile(x, y, (Image)tiles.get(tile+62));
-		
 							break;
-						case 'H':
-							tile = 0;
-							newMap.setTile(x, y, (Image)tiles.get(tile+55));
-							
-							break;
-							
-						case 'C':
-							tile = 0;
-							newMap.setTile(x, y, (Image)tiles.get(tile+20));
-							
-							break;
-							
+			
 						case ' ':
-							
+							tile = 0;
 							break;
-							
+			
 						default:
-							//newMap.setTile(x, y, (Image)tiles.get(tile));
 							break;
-							}
+						}
 						break;
-						
-					default:
+					default: //Loads all of the default tiles for anything else
 						
 						switch (ch){
 						case 'B':
 							tile = 0;
 							newMap.setTile(x, y, (Image)tiles.get(tile+7));
-							
 							break;
+							
 						case 'A':
 							tile = 0;
 							newMap.setTile(x, y, (Image)tiles.get(tile+0));
-							
 							break;
+							
 						case 'E':
 							tile = 0;
 							newMap.setTile(x, y, (Image)tiles.get(tile+28));
-							
 							break;
+							
 						case 'F':
 							tile = 0;
 							newMap.setTile(x, y, (Image)tiles.get(tile+35));
-							
 							break;
+							
 						case 'G':
 							tile = 0;
 							newMap.setTile(x, y, (Image)tiles.get(tile+42));
-							
 							break;
 							
 						case 'D':
 							tile = 0;
 							newMap.setTile(x, y, (Image)tiles.get(tile+21));
-							
 							break;
 							
 						case 'I':
 							tile = 0;
 							newMap.setTile(x, y, (Image)tiles.get(tile+56));
-		
 							break;
+							
 						case 'H':
 							tile = 0;
 							newMap.setTile(x, y, (Image)tiles.get(tile+49));
-							
 							break;
 							
 						case 'C':
 							tile = 0;
 							newMap.setTile(x, y, (Image)tiles.get(tile+14));
-							
 							break;
 							
 						case 'J':
 							tile = 0;
 							newMap.setTile(x, y, (Image)tiles.get(tile+63));
-							
 							break;
-						case ' ':
 							
+						case ' ':
 							break;
 							
 						default:
-							//newMap.setTile(x, y, (Image)tiles.get(tile));
 							break;
 						}
 						break;
 				}
 
-				/*while(filename.equals("ConcreteMap.txt")) {
-						
-							
-					}
-					while(filename.equals("FireMap.txt")) {
-						
-							
-					}
-					while(filename.equals("JungleMap.txt")) {
-					
-				}
-					while(filename.equals("PlainsMap.txt")) {
-					
-				}
-					while(filename.equals("SnowMap.txt")) {
-					
-				}
-					while(filename.equals("WaterMap.txt")) {
-					
-					}*/
-			//	}
+
 				// check if the char represents a sprite
-		           if (ch == '.') {
+		           if (ch == '+') {
 					addSprite(newMap, coinSprite, x, y);
 				} else if (ch == '!') {
 					addSprite(newMap, musicSprite, x, y);
@@ -742,7 +821,7 @@ public class ResourceManager {
 				else if (s.getArchType(x).compareTo("monkey") == 0)
 					enemyAnim[x][i] = createMonkeyAnim(images[i][imageIndex++], images[i][imageIndex++],
 							images[i][imageIndex++]);
-				else if (s.getArchType(x).compareTo("wolf") == 0)
+				else if (s.getArchType(x).compareTo("boss") == 0)
 					enemyAnim[x][i] = createBossAnim(images[i][imageIndex++], images[i][imageIndex++],
 							images[i][imageIndex++]);
 				else if (s.getArchType(x).compareTo("sinuousfly") == 0)
@@ -767,7 +846,7 @@ public class ResourceManager {
 					enemyAnim[x][i] = createBulldozerAnim(images[i][imageIndex++], images[i][imageIndex++],
 							images[i][imageIndex++]);
 				else if (s.getArchType(x).compareTo("cactus") == 0)
-					enemyAnim[x][i] = createCactusAnim(images[i][imageIndex++], images[i][imageIndex++]);
+					enemyAnim[x][i] = createGrubAnim(images[i][imageIndex++], images[i][imageIndex++]);
 				else if (s.getArchType(x).compareTo("chameleon") == 0)
 					enemyAnim[x][i] = createMonkeyAnim(images[i][imageIndex++], images[i][imageIndex++],
 							images[i][imageIndex++]);
@@ -823,8 +902,8 @@ public class ResourceManager {
 				enemySprites[x] = new Fly(enemyAnim[x][0], enemyAnim[x][1], enemyAnim[x][2], enemyAnim[x][3]);
 			else if (s.getArchType(x).compareTo("monkey") == 0)
 				enemySprites[x] = new Monkey(enemyAnim[x][0], enemyAnim[x][1], enemyAnim[x][2], enemyAnim[x][3]);
-			else if (s.getArchType(x).compareTo("wolf") == 0)
-				enemySprites[x] = new Wolf(enemyAnim[x][0], enemyAnim[x][1], enemyAnim[x][2], enemyAnim[x][3]);
+			else if (s.getArchType(x).compareTo("Boss") == 0)
+				enemySprites[x] = new Boss(enemyAnim[x][0], enemyAnim[x][1], enemyAnim[x][2], enemyAnim[x][3]);
 			else if (s.getArchType(x).compareTo("sinuousfly") == 0)
 				enemySprites[x] = new SinuousFly(enemyAnim[x][0], enemyAnim[x][1], enemyAnim[x][2], enemyAnim[x][3]);
 			else if (s.getArchType(x).compareTo("homingfly") == 0)
@@ -840,7 +919,7 @@ public class ResourceManager {
 			else if (s.getArchType(x).compareTo("bulldozer") == 0)
 				enemySprites[x] = new Bulldozer(enemyAnim[x][0], enemyAnim[x][1], enemyAnim[x][2], enemyAnim[x][3]);
 			else if (s.getArchType(x).compareTo("cactus") == 0)
-				enemySprites[x] = new Bulldozer(enemyAnim[x][0], enemyAnim[x][1], enemyAnim[x][2], enemyAnim[x][3]);
+				enemySprites[x] = new HazardCone(enemyAnim[x][0], enemyAnim[x][1], enemyAnim[x][2], enemyAnim[x][3]);
 			else if (s.getArchType(x).compareTo("chameleon") == 0)
 				enemySprites[x] = new Chameleon(enemyAnim[x][0], enemyAnim[x][1], enemyAnim[x][2], enemyAnim[x][3]);
 			else if (s.getArchType(x).compareTo("eel") == 0)
@@ -850,7 +929,7 @@ public class ResourceManager {
 			else if (s.getArchType(x).compareTo("fish") == 0)
 				enemySprites[x] = new Fish(enemyAnim[x][0], enemyAnim[x][1], enemyAnim[x][2], enemyAnim[x][3]);
 			else if (s.getArchType(x).compareTo("gorilla") == 0)
-				enemySprites[x] = new Gorilla(enemyAnim[x][0], enemyAnim[x][1], enemyAnim[x][2], enemyAnim[x][3]);
+				enemySprites[x] = new Monkey(enemyAnim[x][0], enemyAnim[x][1], enemyAnim[x][2], enemyAnim[x][3]);
 			else if (s.getArchType(x).compareTo("sandsnake") == 0)
 				enemySprites[x] = new SandSnake(enemyAnim[x][0], enemyAnim[x][1], enemyAnim[x][2], enemyAnim[x][3]);
 			else if (s.getArchType(x).compareTo("grasssnake") == 0)
@@ -868,7 +947,8 @@ public class ResourceManager {
 			else if (s.getArchType(x).compareTo("volcano") == 0)
 				enemySprites[x] = new Volcano(enemyAnim[x][0], enemyAnim[x][1], enemyAnim[x][2], enemyAnim[x][3]);
 			else if (s.getArchType(x).compareTo("walkinglighter") == 0)
-				enemySprites[x] = new WalkingLighter(enemyAnim[x][0], enemyAnim[x][1], enemyAnim[x][2], enemyAnim[x][3]);
+				enemySprites[x] = new WalkingLighter(enemyAnim[x][0], enemyAnim[x][1], enemyAnim[x][2],
+						enemyAnim[x][3]);
 
 	}
 
