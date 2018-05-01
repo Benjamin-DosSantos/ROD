@@ -27,7 +27,7 @@ public class Player extends Creature {
         	}
     	}
     }
-
+    
     public void jump(boolean forceJump) {
     	if(CodeReflection.isTracing() && SpritesPackageTracingEnabled.getSpritesPackageTracingEnabledInstance().isEnabled()) {
         	if(CodeReflection.getAbstactionLevel()>=3)
