@@ -17,25 +17,33 @@ public class StartMenu extends JFrame{
 	 private JButton startButton;
 	 private JButton exitButton;
 	 private JButton optionsButton;
+	 private JButton loadButton;
 	 private JPanel  buttonPanel;
 	 private JPanel screenContainer;
 	 JScrollPane scrollPane;
 		ImageIcon icon;
 		Image image;
 	 private OptionsMenu optionsMenu;
+	 private LoadGameMenu loadGameMenu;
 	 
 	public StartMenu()
 	{
 		optionsMenu = new OptionsMenu();
-    	startButton = new JButton("Start Game");
+		loadGameMenu = new LoadGameMenu();
+    	startButton = new JButton("Start New Game");
     	startButton.addActionListener(new StartButtonListener());
     	optionsButton = new JButton("Options");
     	optionsButton.addActionListener(new OptionsButtonListener(optionsMenu));
     	exitButton = new JButton("Exit Game");
     	exitButton.addActionListener(new ExitButtonListener());
+    	
+    	loadButton = new JButton("Load Save");
+    	loadButton.addActionListener(new LoadGameSaveMenuListiner(loadGameMenu));
+    	
     	buttonPanel = new JPanel();
-    	buttonPanel.setLayout(new GridLayout(3,0));
+    	buttonPanel.setLayout(new GridLayout(4,0));
     	buttonPanel.add(startButton);
+    	buttonPanel.add(loadButton);
     	buttonPanel.add(optionsButton);
     	buttonPanel.add(exitButton);
     	screenContainer = new JPanel(new BorderLayout());
