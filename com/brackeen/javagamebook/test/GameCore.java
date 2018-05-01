@@ -52,6 +52,7 @@ public abstract class GameCore {
             gameLoop();
         }
         finally {
+        	GameManager.getSaveGameHandler().saveCurrentInformation();
              screen.restoreScreen();
 //            lazilyExit();
         }
