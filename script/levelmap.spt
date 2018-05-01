@@ -4,78 +4,39 @@
 # > denotes the name of the map that holds the textfile
 ####################################
 #Number of Maps
-24
+11
 ####################################
 #Maps themselves
 1 >map2.txt
 >background.png
 >music.mid
-2 >map2.txt
->background2.png
->music2.midi
-3 >map3.txt
->background.png
+2 >JungleMap.txt
+>background6.png
 >music.mid
-4 >map3.txt
->background2.png
->music2.midi
-5 >map4.txt
->background.png
->music2.midi
-6 >map4.txt
->background2.png
+3 >JungleMap.txt
+>background12.png
 >music.mid
-7 >map5.txt
->background.png
->music.mid
-8 >map5.txt
->background2.png
+4 >WaterMap.txt
+>background8.png
 >music2.midi
-9 >map6.txt
->background.png
+5 >WaterMap.txt
+>background14.png
 >music2.midi
-10 >map6.txt
->background2.png
->music.mid
-11 >map7.txt
->background.png
+6 >SnowMap.txt
+>background7.png
+>music.midi
+7 >ConcreteMap.txt0
+>background9.png
 >music2.midi
-12 >map7.txt
->background2.png
->music.mid
-13 >map1.txt
->background.png
+8 >ConcreteMap.txt0
+>background15.png
 >music2.midi
-14 >map1.txt
->background2.png
+9 >PlainsMap.txt
+>background4.png
 >music2.midi
-15 >WaterMap.txt
->WaterMapBackground.png
->music.mid
-16 >WaterMap.txt
->WaterMapBackground.png
+10 >PlainsMap.txt
+>background10.png
 >music2.midi
-17 >ConcreteMap.txt
->ConcreteMapBackground.png
->music.mid
-18 >ConcreteMap.txt
->ConcreteMapBackground.png
->music2.midi
-19 >JungleMap.txt
->JungleMapBackground.png
->music.mid
-20 >JungleMap.txt
->JungleMapBackground.png
->music2.midi
-21 >SnowMap.txt
->SnowMapBackground.png
->music.mid
-22 >PlainsMap.txt
->DesertMapBackground.png
->music.mid
-23 >PlainsMap.txt
->DesertMapBackground.png
->music2.midi
-24 >FireMap.txt
->FireMapBackground.png
+11 >FireMap.txt
+>background14.png
 >music.mid
