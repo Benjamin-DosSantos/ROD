@@ -19,21 +19,21 @@ public class PolarBear extends Creature
     
 
     trackPlayer = true;
-    health = 3;
   }
   
-  public void decrementHealth()
-	{
-		if(CodeReflection.isTracing() && SpritesPackageTracingEnabled.getSpritesPackageTracingEnabledInstance().isEnabled()) {
-			if(CodeReflection.getAbstactionLevel()>=3)
-			{//check to make sure it's this level of abstraction
-				e.fillInStackTrace();		
-				CodeReflection.registerMethod(e.getStackTrace()[0].getClassName(),
-						e.getStackTrace()[0].getMethodName());
-			}
-		}
-		health--;
-	}
+  public void setHealth(int x)
+  {
+    x = 3;
+    if ((CodeReflection.isTracing()) && (SpritesPackageTracingEnabled.getSpritesPackageTracingEnabledInstance().isEnabled()) && 
+      (CodeReflection.getAbstactionLevel() >= 3))
+    {
+      e.fillInStackTrace();
+      CodeReflection.registerMethod(e.getStackTrace()[0].getClassName(), 
+        e.getStackTrace()[0].getMethodName());
+    }
+    
+    health = x;
+  }
   
   public float getMaxSpeed() {
     if ((CodeReflection.isTracing()) && (SpritesPackageTracingEnabled.getSpritesPackageTracingEnabledInstance().isEnabled()) && 
@@ -44,6 +44,6 @@ public class PolarBear extends Creature
         e.getStackTrace()[0].getMethodName());
     }
     
-    return 0.15f * enemySpeedMultiplier;
+    return 0.15F * enemySpeedMultiplier;
   }
 }

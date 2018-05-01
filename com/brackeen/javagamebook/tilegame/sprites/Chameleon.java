@@ -36,6 +36,6 @@ public class Chameleon extends Creature {
         e.getStackTrace()[0].getMethodName());
     }
     
-    return 0.1f * enemySpeedMultiplier;
+    return 0.01F * enemySpeedMultiplier;
   }
 }

@@ -1,9 +1,10 @@
 package com.brackeen.javagamebook.tilegame.sprites;
-import com.brackeen.javagamebook.graphics.Animation;
-import com.brackeen.javagamebook.codereflection.*;
 
-public class Cactus extends Creature {
-	public Cactus(Animation left, Animation right, Animation deadLeft,Animation deadRight) {
+import com.brackeen.javagamebook.codereflection.CodeReflection;
+import com.brackeen.javagamebook.graphics.Animation;
+
+public class HazardCone extends Creature{
+	public HazardCone(Animation left, Animation right, Animation deadLeft,Animation deadRight) {
 		//Call the constructor for Creature
         super(left, right, deadLeft, deadRight);
     	if(CodeReflection.isTracing() && SpritesPackageTracingEnabled.getSpritesPackageTracingEnabledInstance().isEnabled()) {

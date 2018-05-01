@@ -36,7 +36,7 @@ public class WalkingLighter extends Creature {
         								e.getStackTrace()[0].getMethodName());
         	}
     	}
-        return 0.01f * enemySpeedMultiplier;
+        return 0.07f * enemySpeedMultiplier;
     }
 
 }

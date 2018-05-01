@@ -28,6 +28,8 @@ public class Shark extends HomingFly{
         //The shark is following the player
         trackPlayer = true;
         
+        health = 3;
+        
         //Set Vertical speed
         setVelocityY(0.25f);
         
@@ -39,21 +41,5 @@ public class Shark extends HomingFly{
 		
 	}
 	
-	//Health is set to 3
-	public void setHealth(int x){
-
-		x=3;
-
-		if(CodeReflection.isTracing() && SpritesPackageTracingEnabled.getSpritesPackageTracingEnabledInstance().isEnabled()) {
-			if(CodeReflection.getAbstactionLevel()>=3)
-			{//check to make sure it's this level of abstraction
-				e.fillInStackTrace();		
-				CodeReflection.registerMethod(e.getStackTrace()[0].getClassName(),
-						e.getStackTrace()[0].getMethodName());
-			}
-		}
-
-		health=x;
-	}
 
 }

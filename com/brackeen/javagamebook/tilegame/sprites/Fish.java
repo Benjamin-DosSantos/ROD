@@ -1,12 +1,9 @@
-
-//John Egan 
-
 package com.brackeen.javagamebook.tilegame.sprites;
 
 import com.brackeen.javagamebook.codereflection.CodeReflection;
 import com.brackeen.javagamebook.graphics.Animation;
 
-public class Fish extends Grub {
+public class Fish extends RandomFly {
 
 	//Animates the fish 
 	public Fish(Animation left, Animation right,Animation deadLeft, Animation deadRight){
@@ -49,23 +46,6 @@ public class Fish extends Grub {
 		health--;
 	}
 	
-/*
-	public void setHealth(int x){
-
-		x=2;
-
-		if(CodeReflection.isTracing() && SpritesPackageTracingEnabled.getSpritesPackageTracingEnabledInstance().isEnabled()) {
-			if(CodeReflection.getAbstactionLevel()>=3)
-			{//check to make sure it's this level of abstraction
-				e.fillInStackTrace();		
-				CodeReflection.registerMethod(e.getStackTrace()[0].getClassName(),
-						e.getStackTrace()[0].getMethodName());
-			}
-		}
-
-		health=x;
-	}
-*/
 	//If the fish is not hurt it moves normally, if it is hurt its speed doubles 
 	public float getMaxSpeed() {
 		if(CodeReflection.isTracing() && SpritesPackageTracingEnabled.getSpritesPackageTracingEnabledInstance().isEnabled() && getState()==STATE_NORMAL){
@@ -78,7 +58,7 @@ public class Fish extends Grub {
 
 		}
 		
-		return 0.4f * enemySpeedMultiplier;
+		return 0.24f * enemySpeedMultiplier;
 	}
 
 }
