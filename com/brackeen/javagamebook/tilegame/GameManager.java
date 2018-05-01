@@ -21,8 +21,11 @@ import com.brackeen.javagamebook.codereflection.*;
 */
 public class GameManager extends GameCore {
 	private boolean showFPS=true;
+	private static SaveGameHandler saveGameHandler;
 	
     public static void main(String[] args) {
+    	
+    	saveGameHandler = new SaveGameHandler();
     	
     	startMenu = new StartMenu();
     	startMenu.setVisible(true);
@@ -42,6 +45,7 @@ public class GameManager extends GameCore {
 	        {
 	        	startMenu.setVisible(false);
 	        	gameManager.run();
+	        	
 	        	runGame = false;
 	        	
 	        	if(toolScreen)
@@ -55,6 +59,13 @@ public class GameManager extends GameCore {
 	        
     	}
     	startMenu.setVisible(false);
+    }
+    
+    public void loadGameInformation(int saveNumber) {
+		map = resourceManager.loadWarpMap(saveGameHandler.getSaveLevelData(saveNumber));
+		health = saveGameHandler.getPlayerHealthFromSave(saveNumber);
+		scoreBoard.setScore(saveGameHandler.getSaveLevelScore(saveNumber));
+		scoreBoard.setStarTotal(saveGameHandler.getSaveLevelStarScore(saveNumber));
     }
     
     private GameManager()
@@ -96,6 +107,7 @@ public class GameManager extends GameCore {
     private MidiPlayer midiPlayer;
     private SoundManager soundManager;
     private ResourceManager resourceManager;
+    
     
     private Sound starSound;
     private Sound boopSound;
@@ -143,10 +155,11 @@ public class GameManager extends GameCore {
         // set up input manager
         initInput();
 
+        
+        
         // start resource manager
-      
-        resourceManager = new ResourceManager(
-        screen.getFullScreenWindow().getGraphicsConfiguration());
+        
+        resourceManager = new ResourceManager(screen.getFullScreenWindow().getGraphicsConfiguration());
 
         // load resources
         renderer = new TileMapRenderer();
@@ -544,7 +557,11 @@ public class GameManager extends GameCore {
     	return (HEALTH_MAX);
     }
     
-    public ResourceManager getResourceManagerInstance()
+    public void setMap(TileMap map) {
+		this.map = map;
+	}
+
+	public ResourceManager getResourceManagerInstance()
     {
     	if(CodeReflection.isTracing() && TilegamePackageTracingEnabled.getTilegamePackageTracingEnabledInstance().isEnabled()) {
         	if(CodeReflection.getAbstactionLevel()>=0)
@@ -557,7 +574,24 @@ public class GameManager extends GameCore {
     	return(resourceManager);
     }
     
-    public void toggleMusic()
+
+	public static SaveGameHandler getSaveGameHandler() {
+		return saveGameHandler;
+	}
+
+	public static void setSaveGameHandler(SaveGameHandler saveGameHandler) {
+		GameManager.saveGameHandler = saveGameHandler;
+	}
+
+	public ScoreBoard getScoreBoard() {
+		return scoreBoard;
+	}
+
+	public void setScoreBoard(ScoreBoard scoreBoard) {
+		this.scoreBoard = scoreBoard;
+	}
+
+	public void toggleMusic()
     {
     	if(CodeReflection.isTracing() && TilegamePackageTracingEnabled.getTilegamePackageTracingEnabledInstance().isEnabled()) {
         	if(CodeReflection.getAbstactionLevel()>=0)
